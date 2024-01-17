@@ -142,14 +142,15 @@ public class GameOfLife {
 		for(int i = 1;i<arr.length-1;i++){
 			//System.out.println("about to print line " +i);
 			for(int j = 1;j<arr[i].length-1;j++){
-				if ( j == arr[i].length-2 ) 
-					{
-						System.out.printf("%d", arr[i][j]);
-					}
-					else 
-					{
-						System.out.printf("%-3d", arr[i][j]);		
-					}
+				System.out.printf("%3d", arr[i][j]);
+				//if ( j == arr[i].length-2 ) 
+				//	{
+				//		System.out.printf("%d", arr[i][j]);
+				//	}
+				//	else 
+				//	{
+				//		System.out.printf("%-3d", arr[i][j]);		
+				//	}
 				
 			}
 			//System.out.println("end print");
