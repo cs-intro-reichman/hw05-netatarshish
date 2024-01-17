@@ -64,8 +64,7 @@ public class GameOfLife {
     int rows = Integer.parseInt(in.readLine());
     int cols = Integer.parseInt(in.readLine());
     int[][] board = new int[rows + 2][cols + 2];
-    System.out.println("nuber of rows "+board.length);
-    System.out.println("nuber of cols "+board[0].length);
+    
 
     for (int i = 1; i < rows + 1; i++) {
         String line = in.readLine();
@@ -141,11 +140,11 @@ public class GameOfLife {
     public static void print(int[][] arr) {
     System.out.println(arr.length);   	
 		for(int i = 1;i<arr.length-1;i++){
-			System.out.println("about to print line " +i);
+			//System.out.println("about to print line " +i);
 			for(int j = 1;j<arr[i].length-1;j++){
 				System.out.printf("%-2s", arr[i][j]);
 			}
-			System.out.println("end print");
+			//System.out.println("end print");
 			System.out.println();
 		}
 	}
